@@ -1,9 +1,10 @@
 /*
---------------------
+========================================
 DDL Scripts: Create Bronze Tables
----------------------------------
-There are two source systems being used. Source crm and erp , 
-these scripts are used to bulk isert them from where they are saved in the computer/cloud. 
+=============================================
+Purpose:
+The script creates tables in the bronze schema, dropping existing tables if they already exist. 
+There are two source systems being used. Source crm and erp , these scripts are used to bulk isert them from where they are saved in the computer/cloud. 
 
 Truncate forst empties the tale and then proceeds to populated the table. 
 
@@ -12,6 +13,7 @@ Note: The headers are not part of the row count. When count function is used, th
 Becasue the dataset is being stored in the bronze layer and as such would be used frequently, a stored procedure has been created. 
 The duration time is set and gotten and the batch time for the whole bronze layer to load is also gotten. Messages for errors and completion is also printed
 */
+
 EXEC bronze.load_bronze
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
