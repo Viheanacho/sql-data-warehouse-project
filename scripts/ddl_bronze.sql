@@ -1,6 +1,6 @@
 /*
 --------------------
-Insert Table from local drive
+DDL Scripts: Create Bronze Tables
 ---------------------------------
 There are two source systems being used. Source crm and erp , 
 these scripts are used to bulk isert them from where they are saved in the computer/cloud. 
